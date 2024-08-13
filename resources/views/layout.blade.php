@@ -5,46 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Laravel Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        header {
-            background-color: #eee;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 100px;
-            align-items: center;
+        nav {
+            border-bottom: 1px solid #ccc;
         }
 
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-menu li {
+        .blog-card {
+            flex: 1 1 calc(25% - 20px);
             margin-right: 20px;
+            margin-bottom: 20px;
         }
 
-        .nav-menu li a {
-            text-decoration: none;
+        .blog-container {
+            flex-wrap: wrap;
+            gap: 20px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h3>Blog LWU</h3>
-        <ul class="nav-menu">
-            <li><a href="{{ route('index') }}">Home</a></li>
-            <li><a href="{{ route('blog.index') }}">Blogs</a></li>
-        </ul>
-    </header>
-
-    @yield('content')
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container justify-content-between">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPillsExample"
+                aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">LWU Blogs</a>
+            <div class="d-flex collapse navbar-collapse" id="navbarPillsExample">
+                <ul class="navbar-nav navbar-nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('blog.index') }}">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-3">
+        @yield('content')
+    </div>
 </body>
 
 </html>
