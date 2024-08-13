@@ -37,7 +37,7 @@
                 aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">LWU Blogs</a>
+            <a class="navbar-brand" href="{{ route('index') }}">LWU Blogs</a>
             <div class="d-flex collapse navbar-collapse" id="navbarPillsExample">
                 <ul class="navbar-nav navbar-nav-pills">
                     <li class="nav-item">
