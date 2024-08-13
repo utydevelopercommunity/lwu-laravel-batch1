@@ -16,40 +16,5 @@
                     </div>
                 </div>
             @endforeach
-            <div class="card blog-card flex-grow-1">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $post->title }}</h5>
-                    <p class="card-text">{{ $post->description }}</p>
-                    <a href="" class="btn btn-primary">Baca</a>
-                </div>
-            </div>
-            <div class="card blog-card flex-grow-1">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $post->title }}</h5>
-                    <p class="card-text">{{ $post->description }}</p>
-                    <a href="" class="btn btn-primary">Baca</a>
-                </div>
-            </div>
-            <div class="card blog-card flex-grow-1">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $post->title }}</h5>
-                    <p class="card-text">{{ $post->description }}</p>
-                    <a href="" class="btn btn-primary">Baca</a>
-                </div>
-            </div>
-            <div class="card blog-card flex-grow-1">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $post->title }}</h5>
-                    <p class="card-text">{{ $post->description }}</p>
-                    <a href="" class="btn btn-primary">Baca</a>
-                </div>
-            </div>
-            <div class="card blog-card flex-grow-1">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $post->title }}</h5>
-                    <p class="card-text">{{ $post->description }}</p>
-                    <a href="" class="btn btn-primary">Baca</a>
-                </div>
-            </div>
     </section>
 @endsection
