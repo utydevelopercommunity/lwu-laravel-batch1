@@ -9,6 +9,15 @@ Route::get('/', function () {
     return view('home');
 })->name('index');
 
+// Auth View
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+
 // http://localhost:8000/blogs
 Route::controller(PostController::class)->group(function () {
     Route::get("/blogs", 'main')->name('blog.index');
